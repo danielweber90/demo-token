@@ -33,7 +33,7 @@ interface IERC20{
      */
     function transfer(address to, uint tokens) external returns (bool success);
     
-    **
+    /**
      * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.
      *
      * Returns a boolean value indicating whether the operation succeeded.
