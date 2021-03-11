@@ -27,7 +27,7 @@ contract ERC20 is IERC20 {
         emit Transfer(address(0), msg.sender, total);
     }
     function totalSupply() public view override returns (uint256) {
-        return _totalSupply - balances[address(0)];
+        return _totalSupply;
     }
     function balanceOf(address tokenOwner) public view override returns (uint256 balance) {
         return balances[tokenOwner];
